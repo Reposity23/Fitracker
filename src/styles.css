@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #f8f9ff;
+  background: #0a1020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f2a44, #0a1020 58%);
+}
+
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: rgba(12, 19, 38, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.entry-card {
+  grid-column: span 2;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.hint,
+.status {
+  color: #c0c6dc;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: #d9def1;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  border-radius: 12px;
+  border: 1px solid #2b3659;
+}
+
+input,
+textarea {
+  background: #0f1730;
+  color: #f7f8ff;
+  padding: 0.65rem 0.75rem;
+}
+
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+.inline-fields {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+button {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.primary {
+  background: linear-gradient(120deg, #ff6f61, #ff8a65);
+  color: #10162c;
+}
+
+.secondary {
+  background: #42a5f5;
+  color: #061224;
+}
+
+.preview,
+.log-card img {
+  width: min(100%, 220px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.day-log {
+  margin-top: 0.8rem;
+}
+
+.log-card {
+  border: 1px solid #273459;
+  border-radius: 14px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.chart-wrap {
+  width: 100%;
+  height: 280px;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 0.5rem;
+  background: #f8f9ff;
+  color: #1d1d28;
+}
+
+@media (max-width: 860px) {
+  .entry-card {
+    grid-column: span 1;
+  }
+
+  .inline-fields {
+    grid-template-columns: 1fr;
+  }
+}
