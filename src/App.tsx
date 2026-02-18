@@ -122,8 +122,6 @@ export default function App() {
       y += 8;
       doc.text(`EXERCISE: ${entry.exercise || '-'}`, 12, y);
       y += 8;
-      doc.text(`IMAGE: ${entry.imageName || 'Attached in app'}`, 12, y);
-      y += 8;
       doc.text(`WHEY GRAMS: ${entry.wheyGrams ?? 0}`, 12, y);
       y += 8;
       doc.text(`CREATINE GRAMS: ${entry.creatineGrams ?? 0}`, 12, y);
